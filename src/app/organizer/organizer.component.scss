@@ -1,0 +1,23 @@
+section{
+    border: none;
+}
+header{
+    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
+    color: var(--light-color);
+
+}
+.task{
+  display: flex;
+  text-size-adjust: 18px;
+  justify-content: space-between;
+  align-items: center;
+  padding:  .5rem 1rem;  
+  border: 1px solid #ccc;
+  margin-bottom: 1.2rem;
+  background: #ccc;
+}
+
+li{
+  border-radius: 5px;
+}

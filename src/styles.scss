@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333333;
+  --light-color: #f5f4d1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: rgb(150, 149, 149);
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    color: #666;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+
+input {
+  display: block;
+  width: 100%;
+  padding: 4px;
+  font-size: 19px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+table th {
+  background: var(--light-color);
+}
+table td{
+  background: var(--light-color);
+}
+table tr {
+  background: var(--light-color);
+}
+
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 6.4px 20.8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: opacity .2s;
+  outline: none;
+
+  &:disabled {
+    background: var(--dark-color);
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    opacity: .8;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
